@@ -88,4 +88,5 @@ header .navbar {
     padding: 10px 18px;
     color: var(--white-color);
     background: var(--secondary-color)
+    border-radius: var(--border-radius-m);
 }
