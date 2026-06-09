@@ -42,6 +42,18 @@
 
 }
 
+ul{
+    list-style: none;
+}
+
 header {
-    background: ;
+    background: var(--primary-color);
+}
+
+.navbar .nav-logo .logo-text {
+    color: var(--white-color)
+}
+
+.navbar .nav-menu .nav-link {
+    color: var(--white-color);
 }
