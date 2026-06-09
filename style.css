@@ -67,6 +67,13 @@ header {
     background: var(--primary-color);
 }
 
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 .navbar .nav-logo .logo-text {
     color: var(--white-color)
 }
