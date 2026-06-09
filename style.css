@@ -75,7 +75,11 @@ header .navbar {
 }
 
 .navbar .nav-logo .logo-text {
-    color: var(--white-color)
+    color: var(--white-color);
+}
+
+.navbar .nav-menu {
+    color: var(--white-color);
 }
 
 .navbar .nav-menu .nav-link {
