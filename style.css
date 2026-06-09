@@ -46,6 +46,16 @@ ul{
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer; 
+    border: none;
+    background: none;
+}
+
 header {
     background: var(--primary-color);
 }
