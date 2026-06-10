@@ -66,6 +66,7 @@ header {
 
 header .navbar {
    display: flex;
+   padding: 20px;
    align-items: center;
    justify-content: space-between;
 }
@@ -74,8 +75,20 @@ header .navbar {
    color: var(--white-color);
 }
 
-.navbar .nav-menu
+.navbar .nav-menu {
+   display: flex;
+   gap: 10px;
+}
 
 .navbar .nav-menu .nav-link {
+   padding: 10px 18px;
    color: var(--white-color);
+   font-size: var(--font-size-m);
+   border-radius: var(--border-radius-m);
+   transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: var(--primary-color);
+   background: var(--secondary-color);
 }
