@@ -91,6 +91,24 @@ header .navbar {
    gap: 10px;
 }
 
+/* Menu section styling */
+.menu-section .menu-list {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.menu-section .menu-list
+
+@media screen and (max-width: 900px) {
+   :root {
+      --font-size-m: 1rem;
+      --font-size-l: 1.3rem;
+      --font-size-xl: 1.5rem;
+      --font-size-xxl: 1.8rem;
+   }
+}
+
 .navbar .nav-menu .nav-link {
    padding: 10px 18px;
    color: var(--white-color);
