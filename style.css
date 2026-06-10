@@ -92,16 +92,26 @@ header .navbar {
 }
 
 /* Menu section styling */
+.menu-section {
+   color: var(--white-color);
+   background: var(--dark-color);
+}
+
 .menu-section .menu-list {
    display: flex;
    flex-wrap: wrap;
+   gap: 110px;
    align-items: center;
+   justify-content: space-between;
 }
 
 .menu-section .menu-list .menu-item {
    display: flex;
    align-items: center; 
+   text-align: center; 
    flex-direction: column; 
+   justify-content: space-between; 
+   width: calc(100% / 3 - 110px);
 }
 
 .menu-section .menu-list .menu-item .menu-image {
