@@ -136,7 +136,7 @@ header .navbar {
    font-size: var(--font-size-m);
 }
 
-.hero-section .hero-details .button {
+.hero-section .hero-details .buttons {
    display: flex;
    gap: 23px; 
 }
