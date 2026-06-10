@@ -40,8 +40,42 @@
    --site-max-width: 1300px;
 }
 
+/* styling the webpage */
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+button {
+   cursor: pointer;
+   border: none;
+   background: none;
+}
+
+img {
+   width: 100%;
+}
+
+/* navbar styling */
 header {
    background: var(--primary-color);
 }
 
-.navbar 
+header .navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text {
+   color: var(--white-color);
+}
+
+.navbar .nav-menu
+
+.navbar .nav-menu .nav-link {
+   color: var(--white-color);
+}
