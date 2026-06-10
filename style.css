@@ -140,6 +140,11 @@ header .navbar {
     font-size: var(--font-size-m);
 }
 
+.hero-section .hero-details .button {
+    display: flex;
+    gap: 23px; 
+}
+
 .hero-section .hero-details .buttion {
     padding: 10px 26px;
     border: 2px solid transparent;
