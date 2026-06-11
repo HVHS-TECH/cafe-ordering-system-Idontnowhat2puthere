@@ -95,6 +95,7 @@ header .navbar {
 .menu-section {
    color: var(--white-color);
    background: var(--dark-color);
+   padding: 50px 0 100px;
 }
 
 .menu-section .menu-list {
