@@ -12,8 +12,8 @@
    /* colours */
    --white-color: #fff;
    --dark-color: #252525;
-   --primary-color: #3b141c;
-   --secondary-color: #f3961c;
+   --primary-color: #5c628f;
+   --secondary-color: #F5853F;
    --light-pink-color: #faf4f5;
    --medium-gray-color: #ccc;
 
@@ -219,7 +219,6 @@ header .navbar {
 .hero-section .hero-details .title{
    font-size: var(--font-size-xxl);
    color: var(--secondary-color);
-   font-family: "Miniver", sans-serif;
 }
 
 .hero-section .hero-details .subtitle {
