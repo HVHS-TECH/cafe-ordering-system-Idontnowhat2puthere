@@ -288,4 +288,17 @@ header .navbar {
    align-items: center;
 }
 
-.contact-section .contact-info-list .contact-info
+.contact-section .contact-info-list .contact-info i {
+   font-size: var(--font-size-m); 
+}
+
+.contact-section .contact-form .form-input {
+   width: 100%;
+   height: 50px;
+   padding: 0 12px;
+   outline: none;
+   margin-bottom: 16px; 
+   background: var(--white-color);
+   border-radius: var(--border-radius-s);
+   border: 1px solid var(--medium-gray-color);
+}
