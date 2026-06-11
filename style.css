@@ -269,4 +269,7 @@ header .navbar {
 }
 
 /* contact us styliing */
-.contact-section
+.contact-section {
+   padding: 50px 0 100px;
+   background: var(--light-pink-color);
+}
