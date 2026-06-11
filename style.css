@@ -167,11 +167,17 @@ header .navbar {
 .stock-section .stock-details .button {
    padding: 10px 26px;
    border: 2px solid transparent;
-   color: var(--secondary-color);
+   color: var(--white-color);
    border-radius: var(--border-radius-m);
    background: var(--secondary-color);
    font-weight: var(--font-weight-medium);
    transition: 0.3s ease; 
+}
+
+.stock-section .stock-details .order-now:hover {
+   color: var(--primary-color);
+   border-color: var(--secondary-color);
+   background: var(--secondary-color); 
 }
 
 
