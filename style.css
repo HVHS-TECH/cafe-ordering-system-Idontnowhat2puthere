@@ -302,3 +302,8 @@ header .navbar {
    border-radius: var(--border-radius-s);
    border: 1px solid var(--medium-gray-color);
 }
+
+.contact-section .contact-form textarea {
+   height: 100px;
+   
+}
