@@ -108,14 +108,14 @@ header .navbar {
    gap: 10px;
 }
 
-/* Menu section styling */
-.menu-section {
+/* Stock section styling */
+.stock-section {
    color: var(--white-color);
    background: var(--dark-color);
    padding: 50px 0 100px;
 }
 
-.menu-section .menu-list {
+.stock-section .stock-list {
    display: flex;
    flex-wrap: wrap;
    gap: 110px;
@@ -123,7 +123,7 @@ header .navbar {
    justify-content: space-between;
 }
 
-.menu-section .menu-list .menu-item {
+.stock-section .stock-list .stock-item {
    display: flex;
    align-items: center; 
    text-align: center; 
@@ -132,31 +132,46 @@ header .navbar {
    width: calc(100% / 3 - 110px);
 }
 
-.menu-section .menu-list .menu-item .menu-image {
+.stock-section .stock-list .stock-item .stock-image {
    max-width: 83%; 
    aspect-ratio: 1;
    margin-bottom: 15px;
    object-fit: contain; 
 }
 
-.menu-section .menu-list .menu-item .name {
+.stock-section .stock-list .stock-item .name {
    margin: 12px 0;
    font-size: var(--font-size-l);
    font-weight: var(--font-weight-semibold);
 }
 
-.menu-section .menu-list .menu-item .text {
+.stock-section .stock-list .stock-item .text {
    font-size: var(--font-size-m); 
 }
 
 @media screen and (max-width: 1024px) {
-   .menu-section .menu-list {
+   .stock-section .stock-list {
       gap: 60px;
    }
 
-   .menu-section .menu-list .menu-item {
+   .stock-section .stock-list .stock-item {
        width: calc(100% / 3 - 60px);
    }
+}
+
+.stock-section .stock-details .buttons {
+   display: flex;
+   gap: 23px; 
+}
+
+.stock-section .stock-details .button {
+   padding: 10px 26px;
+   border: 2px solid transparent;
+   color: var(--primary-color);
+   border-radius: var(--border-radius-m);
+   background: var(--secondary-color);
+   font-weight: var(--font-weight-medium);
+   transition: 0.3s ease; 
 }
 
 @media screen and (max-width: 900px) {
