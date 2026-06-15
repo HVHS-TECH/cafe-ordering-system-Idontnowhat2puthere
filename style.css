@@ -164,7 +164,7 @@ header .navbar {
    gap: 23px; 
 }
 
-.stock-section .stock-item .order-now {
+.stock-section .stock-item .buttons {
    padding: 10px 26px;
    border: 2px solid transparent;
    color: var(--white-color);
@@ -174,7 +174,7 @@ header .navbar {
    transition: 0.3s ease; 
 }
 
-.stock-section .stock-item .order-now {
+.stock-section .stock-item .buttons {
    padding: 10px 26px;
    margin-top: 10px;
    color: var(--primary-color);
@@ -186,9 +186,9 @@ header .navbar {
    transition: 0.3s ease;
 }
 
-.section-section .stock-item .order-now:hover {
+.stock-section .stock-item .buttons:hover {
    color: var(--secondary-color);
-   background: var(--primary-color);
+   background: transparent;
 }
 
 
