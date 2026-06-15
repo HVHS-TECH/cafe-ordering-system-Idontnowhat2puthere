@@ -307,3 +307,20 @@ header .navbar {
    padding: 12px; 
    resize: vertical;
 }
+
+.contact-section .contact-form .submit-button {
+   padding: 10px 26px;
+   margin-top: 10px;
+   color: var(--primary-color)
+   font-size: var(--font-size-m);
+   font-weight: var(--font-weight-medium);
+   background: var(--secondary-color);
+   border-radius: var(--border-radius-m);
+   border: 1px solid var(--secondary-color);
+   transition: 0.3s ease;
+}
+
+.contact-section .contact-form .submit-button:hover {
+   color: var(--secondary-color);
+   background: transparent;
+}
