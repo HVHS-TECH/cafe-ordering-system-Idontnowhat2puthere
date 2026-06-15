@@ -169,7 +169,7 @@ header .navbar {
    border: 2px solid transparent;
    color: var(--white-color);
    border-radius: var(--border-radius-m);
-   background: var(--secondary-color);
+   background: var(--white-color);
    font-weight: var(--font-weight-medium);
    transition: 0.3s ease; 
 }
