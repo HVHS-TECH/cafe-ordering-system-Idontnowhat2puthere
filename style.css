@@ -188,7 +188,7 @@ header .navbar {
 
 .section-section .stock-item .order-now:hover {
    color: var(--secondary-color);
-   background: transparent;
+   background: var(--primary-color);
 }
 
 
