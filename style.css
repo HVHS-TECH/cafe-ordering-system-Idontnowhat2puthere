@@ -311,7 +311,7 @@ header .navbar {
 .contact-section .contact-form .submit-button {
    padding: 10px 26px;
    margin-top: 10px;
-   color: var(--primary-color)
+   color: var(--primary-color);
    font-size: var(--font-size-m);
    font-weight: var(--font-weight-medium);
    background: var(--secondary-color);
