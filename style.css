@@ -177,7 +177,7 @@ header .navbar {
 .stock-section .stock-item .buttons {
    padding: 10px 26px;
    margin-top: 10px;
-   color: var(--primary-color);
+   color: var(--white-color);
    font-size: var(--font-size-m);
    font-weight: var(--font-weight-medium);
    background: var(--secondary-color);
