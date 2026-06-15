@@ -304,5 +304,6 @@ header .navbar {
 
 .contact-section .contact-form textarea {
    height: 100px;
-   
+   padding: 12px; 
+   resize: vertical;
 }
