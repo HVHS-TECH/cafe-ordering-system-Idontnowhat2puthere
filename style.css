@@ -159,12 +159,12 @@ header .navbar {
    }
 }
 
-.stock-section .stock-details .buttons {
+.stock-section .stock-item .buttons {
    display: flex;
    gap: 23px; 
 }
 
-.stock-section .stock-details .order-now {
+.stock-section .stock-item .order-now {
    padding: 10px 26px;
    border: 2px solid transparent;
    color: var(--white-color);
@@ -174,7 +174,7 @@ header .navbar {
    transition: 0.3s ease; 
 }
 
-.stock-section .stock-details .order-now {
+.stock-section .stock-item .order-now {
    padding: 10px 26px;
    margin-top: 10px;
    color: var(--primary-color);
@@ -186,10 +186,9 @@ header .navbar {
    transition: 0.3s ease;
 }
 
-.stock-section .stock-details .order-now:hover {
-   color: var(--primary-color);
-   border-color: var(--secondary-color);
-   background: var(--secondary-color); 
+.section-section .stock-item .order-now:hover {
+   color: var(--secondary-color);
+   background: transparent;
 }
 
 
