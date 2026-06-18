@@ -21,6 +21,30 @@ const swiper = new Swiper('.slider-wrapper', {
 })
 
 
+// start function
+function start() {
+
+    dollars = Number(document.getElementById("moneyInput").value);
+
+    age = Number(document.getElementById("ageInput").value);
+
+    username =
+        document.getElementById("usernameInput").value;
+
+    // calculate AFTER getting age
+    let oldAge = age + 10;
+    let birthYear = year - age;
+
+    if (dollars < 4) {
+        console.log("You're broke");
+    } else {
+        console.log("Rich boy");
+    }
+
+/****************************
+Shopping List Functions
+****************************/
+
 function addItem() {
 
     let item =
@@ -54,5 +78,3 @@ function showList() {
         OUTPUT.innerHTML +=
             shoppingList[i] + "<br>";
     }
-}
-
