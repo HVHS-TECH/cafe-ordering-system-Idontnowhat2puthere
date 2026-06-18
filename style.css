@@ -202,6 +202,18 @@ header .navbar {
 }
 
 .navbar .nav-menu .nav-link {
+   padding: 10px 26px;
+   margin-top: 10px;
+   color: var(--white-color);
+   font-size: var(--font-size-m);
+   font-weight: var(--font-weight-medium);
+   background: var(--secondary-color);
+   border-radius: var(--border-radius-m);
+   border: 1px solid var(--secondary-color);
+   transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link {
    padding: 10px 18px;
    color: var(--white-color);
    font-size: var(--font-size-m);
@@ -210,7 +222,7 @@ header .navbar {
 }
 
 .navbar .nav-menu .nav-link:hover {
-    color: var(--secondary-color);
+    color: var(--white-color);
    background: transparent;
 }
 
