@@ -1,5 +1,13 @@
 console.log("Running t16_arrays_continued.js");
 
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+// variables
+let username = "";
+let age = 0;
+let dollars = 0;
+let year = 2026;
+
 // pay function
 function calculatePay(_hours) {
 
@@ -10,6 +18,10 @@ function calculatePay(_hours) {
 
     return pay.toFixed(2);
 }
+
+// pay calculations
+let mondayPay = calculatePay(8);
+let tuesdayPay = calculatePay(6);
 
 // start function
 function start() {
