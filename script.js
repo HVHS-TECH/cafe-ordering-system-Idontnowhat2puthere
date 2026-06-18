@@ -1,6 +1,6 @@
 console.log("Running t16_arrays_continued.js");
 
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+const OUTPUT = document.getElementById("mysterymail");
 
 // variables
 let username = "";
