@@ -1,25 +1,15 @@
-console.log("Hello world!")
-const navLinks = document.querySelector(".nav-menu .nav-link");
-const menuOpenButton = document.querySelector("#menu-open-button");
-const menuCloseButton = document.querySelector("#menu-close-button");
+console.log("Running t16_arrays_continued.js");
 
-menuOpenButton.addEventListener("click", () => {
-    //Toggle moblie menu visibility
-    document.body.classList.toggle("show-moblie-menu");
-});
+// pay function
+function calculatePay(_hours) {
 
-menuCloeButton.addEventListener("click", () => menuOpenButton.click());
+    let pay = _hours * 18.80;
+    pay = pay - (pay * 0.105);
+    pay = pay - (pay * 0.04);
+    pay = pay + 10;
 
-navLinks.forEach(link => {
-    link.addEventListener("click", () => menuOpenButton.click);
-});
-
-const swiper = new Swiper('.slider-wrapper', {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 25,
-})
-
+    return pay.toFixed(2);
+}
 
 // start function
 function start() {
