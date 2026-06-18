@@ -45,6 +45,16 @@ function start() {
         console.log("Rich boy");
     }
 
+    // display pay
+OUTPUT.innerHTML += "<h3>This week's pay:</h3>";
+
+OUTPUT.innerHTML +=
+    "Monday: $" + mondayPay + "<br>";
+
+OUTPUT.innerHTML +=
+    "Tuesday: $" + tuesdayPay + "<br>";
+
+
 /****************************
 Shopping List Functions
 ****************************/
