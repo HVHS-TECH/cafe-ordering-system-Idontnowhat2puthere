@@ -31,6 +31,8 @@ function start() {
     username =
         document.getElementById("usernameInput").value;
 
+}
+
     // calculate AFTER getting age
     let oldAge = age + 10;
     let birthYear = year - age;
@@ -78,3 +80,4 @@ function showList() {
         OUTPUT.innerHTML +=
             shoppingList[i] + "<br>";
     }
+}
