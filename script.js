@@ -15,18 +15,11 @@ let shoppingList = [];
 // input field
 const CHOOSE_FIELD = document.getElementById("CHOOSE_FIELD");
 
-// clear output
-OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>";
-
 /****************************
 Functions
 ****************************/
 
 Welcome();
-
-function Welcome() {
-    OUTPUT.innerHTML += "<p>A chocolate bar costs $4</p>";
-}
 
 // pay function
 function calculatePay(_hours) {
@@ -103,16 +96,6 @@ function start() {
     OUTPUT.innerHTML +=
         "<p>The current year is " + year + "</p>";
 }
-
-// display pay
-OUTPUT.innerHTML += "<h3>This week's pay:</h3>";
-
-OUTPUT.innerHTML +=
-    "Monday: $" + mondayPay + "<br>";
-
-OUTPUT.innerHTML +=
-    "Tuesday: $" + tuesdayPay + "<br>";
-
 
 /****************************
 Shopping List Functions
