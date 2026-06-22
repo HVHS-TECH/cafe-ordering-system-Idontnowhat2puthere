@@ -371,7 +371,9 @@ header .navbar {
    background: transparent;
 }
 
-.extra-section .extra-form .addItem {
+/*extra*/
+
+.extra-section .extra-form .switch {
    width: 100%;
    height: 50px;
    padding: 0 12px;
