@@ -19,8 +19,6 @@ const CHOOSE_FIELD = document.getElementById("CHOOSE_FIELD");
 Functions
 ****************************/
 
-Welcome();
-
 // pay function
 function calculatePay(_hours) {
 
