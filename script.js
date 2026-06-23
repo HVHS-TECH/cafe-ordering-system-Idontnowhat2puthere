@@ -101,35 +101,51 @@ Shopping List Functions
 
 function addItem() {
 
-    let item =
-        document.getElementById("shoppingInput").value;
+    let name =
+        document.getElementById("nameInput").value;
 
-    if (item === "") {
+    let item =
+        document.getElementById("itemInput").value;
+
+    let money =
+        document.getElementById("moneyInput").value;
+
+    if (name === "" || item === "" || money === "") {
 
         OUTPUT.innerHTML +=
-            "<p>Please enter an item.</p>";
+            "<p>Please fill in all boxes.</p>";
 
         return;
     }
 
-    shoppingList.push(item);
+    shoppingList.push({
+        name: name,
+        item: item,
+        money: money
+    });
 
     OUTPUT.innerHTML +=
-        "<p>You have added " +
-        item +
-        " to the list.</p>";
+        "<p>Order added successfully.</p>";
 
-    document.getElementById("shoppingInput").value = "";
+    document.getElementById("nameInput").value = "";
+    document.getElementById("itemInput").value = "";
+    document.getElementById("moneyInput").value = "";
 }
 
 function showList() {
 
     OUTPUT.innerHTML +=
-        "<h3>These are the items on your shopping list:</h3>";
+        "<h3>Customer Orders</h3>";
 
     for (let i = 0; i < shoppingList.length; i++) {
 
         OUTPUT.innerHTML +=
-            shoppingList[i] + "<br>";
+            "<p>" +
+            shoppingList[i].name +
+            " ordered " +
+            shoppingList[i].item +
+            " for $" +
+            shoppingList[i].money +
+            "</p>";
     }
 }

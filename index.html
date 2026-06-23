@@ -4,7 +4,6 @@
 <title>Mystery Mail</title>
 <link rel="icon" type="image/x-icon" href="images/small-removebg-preview.png">
 <link rel="stylesheet" href="style.css">
-<div id="Mysterymail"></div>
 </head>
 <body>
     <!-- Header / Navbar -->
@@ -13,14 +12,14 @@
     <a href="#" class="nav-logo">
         <h2 class="logo-text">Mystery Mail</h2>
     </a>
-    <u class="nav-menu">
+    <ul class="nav-menu">
         <li class="nav-item">
             <a href="#" class="nav-link">Home</a>
         </li>
          <li class="nav-item">
             <a href="#" class="nav-link">Stock</a>
         </li>
-    </u>
+    </ul>
     </nav>
  </header>
 
@@ -89,68 +88,87 @@
         </div>
     </section> 
 
-    <!-- Order Here -->
-     <section class="order-section">
-        <h2 class="section-title">Order Here</h2>
-            <div class="section-content">
-                <ul class="order-info-list">
+<!--order here-->
+<section class="extra1-section">
+    <h2 class="section-title">Order Here</h2>
 
-                <form action="#" class="order-form">
-                    <input type="text" placeholder="Name" class="form-input" required>
-                    <input type="text" placeholder="Item" class="stock-item" required>
-                       <input type="text" placeholder="Money" class="form-input" required>
-                    <button class="submit-button">Submit</button>
-                </form>
-                </ul>
-            </div>
-     </section>
-
-<!--extra1-->
-<section class="extra1-seciton">
-    <h2 class="section-title">extra1</h2>
     <div class="section-content">
-        <ul class="extra1-info-list">
-        </ul>
+
+        <form action="#" class="key">
+
+            <input
+                type="text"
+                id="nameInput"
+                list="customerSuggestions"
+                placeholder="Name"
+                class="form-input"
+                required>
+
+            <datalist id="customerSuggestions">
+    <option value="James">
+    <option value="Fraser">
+    <option value="Lucas">
+    <option value="David">
+            </datalist>
+
+            <input
+                type="text"
+                id="itemInput"
+                list="packageSuggestions"
+                placeholder="Order"
+                class="form-input"
+                required>
+
+            <datalist id="packageSuggestions">
+            <option value="Small Size Package">
+            <option value="Medium Size Package">
+            <option value="Large Size Package">
+            <option value="Extra Large Size Package">
+            <option value="Retro Package">
+            <option value="Global Treasures Package">
+        </datalist>
+
+            <input
+                type="number"
+                id="moneyInput"
+                list="priceSuggestions"
+                placeholder="Money"
+                class="form-input"
+                required>
+
+            <datalist id="priceSuggestions">
+            <option value="15">
+            <option value="35">
+            <option value="50">
+            <option value="75">
+            <option value="100">
+            <option value="120">
+        </datalist>
+
+            <button
+                type="button"
+                onclick="addItem()"
+                class="submit-button">
+                Submit Order
+            </button>
+
+            <button
+                type="button"
+                onclick="showList()"
+                class="submit-button">
+                Show Orders
+            </button>
+
+        </form>
+
+        <div id="Mysterymail"></div>
+
     </div>
-
-    <form action="#" class="key">
-
-           <input type="text" id="shoppingInput" placeholder="Name" class="form-input" required>
-
-            <input type="text" id="shoppingInput" placeholder="Item" class="form-input" required>
-
-            <input type="text" id="shoppingInput" placeholder="Money" class="form-input" required>
-
-            <button onclick="addItem()">Submit</button>
-
-            <button onclick="showList()"; class="submit-button">Show Shopping List</button>
-          
-            <script src="script.js"></script>
-            </form>
- </section>
-
-
-<!-- extra -->
- <section class="extra-seciton">
-    <h2 class="section-title">extra</h2>
-    <div class="section-content">
-        <ul class="extra-info-list">
-        </ul>
-    </div>
-     <form action="#" class="switch">
-           <input type="text" id="shoppingInput" placeholder="Name">
-
-            <button onclick="addItem()">Add Item</button>
-
-            <button onclick="showList()">Show Shopping List</button>
-
-            <button class="submit-button">Submit</button>
-          
-            <script src="script.js"></script>
-            </form>
- </section>
+</section>
 
  </main>
+
+ <script src="script.js"></script>
 
 </body>
 </html>

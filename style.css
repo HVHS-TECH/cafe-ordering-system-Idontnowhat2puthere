@@ -387,13 +387,46 @@ header .navbar {
 
 /*extra1*/
 
+.extra1-section {
+   padding: 50px 0 100px;
+   background: var(--light-pink-color);
+}
+
+.extra1-section .section-content {
+   display: flex;
+   justify-content: center;
+}
+
+.extra1-section .key {
+   width: 100%;
+   max-width: 600px;
+}
+
 .extra1-section .key .form-input {
    width: 100%;
    height: 50px;
    padding: 0 12px;
    outline: none;
-   margin-bottom: 16px; 
+   margin-bottom: 16px;
    background: var(--white-color);
    border-radius: var(--border-radius-s);
    border: 1px solid var(--medium-gray-color);
+}
+
+.extra1-section .key .submit-button {
+   padding: 10px 26px;
+   margin-top: 10px;
+   margin-right: 10px;
+   color: var(--light-pink-color);
+   font-size: var(--font-size-m);
+   font-weight: var(--font-weight-medium);
+   background: var(--secondary-color);
+   border-radius: var(--border-radius-m);
+   border: 1px solid var(--secondary-color);
+   transition: 0.3s ease;
+}
+
+.extra1-section .key .submit-button:hover {
+   color: var(--secondary-color);
+   background: transparent;
 }
