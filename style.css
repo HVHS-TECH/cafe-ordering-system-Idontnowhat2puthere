@@ -66,6 +66,10 @@ img {
    font-family: "Poppins", sans-serif;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 .section-content {
    margin: 0 auto;
    padding: 0 20px;
