@@ -2,6 +2,10 @@ console.log("Running t16_arrays_continued.js");
 
 const OUTPUT = document.getElementById("Mysterymail");
 
+function showOutput() {
+    OUTPUT.style.display = "block";
+}
+
 // variables
 let username = "";
 let age = 0;
@@ -101,22 +105,17 @@ Shopping List Functions
 
 function addItem() {
 
+    const form = document.getElementById("orderForm");
+
+    if (!form.reportValidity()) {
+        return;
+    }
+
     let name =
         document.getElementById("nameInput").value;
 
     let item =
         document.getElementById("itemInput").value;
-
-    let money =
-        document.getElementById("moneyInput").value;
-
-    if (name === "" || item === "" || money === "") {
-
-        OUTPUT.innerHTML +=
-            "<p>Please fill in all boxes.</p>";
-
-        return;
-    }
 
     shoppingList.push({
         name: name,
@@ -133,6 +132,10 @@ function addItem() {
 }
 
 function showList() {
+
+     showOutput();
+
+    OUTPUT.innerHTML = "";
 
     OUTPUT.innerHTML +=
         "<h3>Customer Orders</h3>";

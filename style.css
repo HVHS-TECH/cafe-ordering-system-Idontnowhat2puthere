@@ -372,19 +372,6 @@ header .navbar {
    background: transparent;
 }
 
-/*extra*/
-
-.extra-section .switch .addItem {
-   width: 100%;
-   height: 50px;
-   padding: 0 12px;
-   outline: none;
-   margin-bottom: 16px; 
-   background: var(--white-color);
-   border-radius: var(--border-radius-s);
-   border: 1px solid var(--medium-gray-color);
-}
-
 /*extra1*/
 
 .extra1-section {
@@ -429,4 +416,26 @@ header .navbar {
 .extra1-section .key .submit-button:hover {
    color: var(--secondary-color);
    background: transparent;
+}
+
+.extra1-section .key .form-input {
+   width: 100%;
+   height: 50px;
+   padding: 0 12px;
+}
+
+/* Output Box */
+
+#Mysterymail {
+   display: none;
+   margin-top: 30px;
+   padding: 20px;
+   background: white;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+}
+
+#Mysterymail {
+   width: 100%;
+   margin-top: 20px;
 }
