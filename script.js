@@ -136,6 +136,8 @@ function addItem() {
 
 function showList() {
 
+    showOutput();
+
     OUTPUT.innerHTML = "";
 
     OUTPUT.innerHTML +=
