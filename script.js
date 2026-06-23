@@ -136,12 +136,15 @@ function addItem() {
 
 function showList() {
 
-     showOutput();
-
     OUTPUT.innerHTML = "";
 
     OUTPUT.innerHTML +=
         "<h3>Customer Orders</h3>";
+
+    OUTPUT.innerHTML +=
+        "<p>Number of orders: " +
+        shoppingList.length +
+        "</p>";
 
     for (let i = 0; i < shoppingList.length; i++) {
 
