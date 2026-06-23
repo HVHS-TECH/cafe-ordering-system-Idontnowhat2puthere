@@ -117,6 +117,9 @@ function addItem() {
     let item =
         document.getElementById("itemInput").value;
 
+    let money =
+        document.getElementById("money").value;
+
     shoppingList.push({
         name: name,
         item: item,
