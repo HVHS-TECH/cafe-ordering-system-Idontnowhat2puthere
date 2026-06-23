@@ -1,4 +1,4 @@
-console.log("Running t16_arrays_continued.js");
+console.log("Running script.js");
 
 const OUTPUT = document.getElementById("Mysterymail");
 
