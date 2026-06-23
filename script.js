@@ -126,6 +126,8 @@ function addItem() {
         money: money
     });
 
+    showOutput();
+
     OUTPUT.innerHTML =
         "<p>Order added successfully.</p>";
 
