@@ -105,13 +105,27 @@
                 required>
 
            
-            <input
-                type="text"
-                id="itemInput"
-                list="packageSuggestions"
-                placeholder="Order"
-                class="form-input"
-                required>
+            <select id="itemInput" class="form-input" required>
+            <option value="">Choose a package</option>
+            <option value="Small Size Package">
+                Small Size Package - $15
+            </option>
+             <option value="Medium Size Package">
+                 Medium Size Package - $35
+             </option>
+             <option value="Large Size Package">
+                 Large Size Package - $50
+            </option>
+            <option value="Extra Large Size Package">
+                Extra Large Size Package - $100
+             </option>
+            <option value="Retro Package">
+                Retro Package - $75
+            </option>
+            <option value="Global Treasures Package">
+                Global Treasures Package - $120
+            </option>
+            </select>
 
             <datalist id="packageSuggestions">
             <option value="Small Size Package">
