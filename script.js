@@ -168,16 +168,20 @@ let change = money - price;
 
     showOutput();
 
-    OUTPUT.innerHTML =
-        "<p>Order added successfully.</p>" +
-        "<p>You paid: $" + money + "</p>" +
-        "<p>Item cost: $" + price + "</p>";
+   OUTPUT.innerHTML = "";
 
-        if (change > 0) {
-            OUTPUT.innerHTML += "<p>Change: $" + change.toFixed(2) + "</p>";
-        } else {
-            OUTPUT.innerHTML += "<p>No change due</p>";
-        }
+OUTPUT.innerHTML =
+    "<p>Order added successfully.</p>" +
+    "<p>Name: " + name + "</p>" +
+    "<p>Item: " + item + "</p>" +
+    "<p>You paid: $" + money + "</p>" +
+    "<p>Item cost: $" + price + "</p>";
+
+if (change > 0) {
+    OUTPUT.innerHTML += "<p>Change: $" + change.toFixed(2) + "</p>";
+} else {
+    OUTPUT.innerHTML += "<p>No change due</p>";
+}
 
     document.getElementById("nameInput").value = "";
     document.getElementById("itemInput").value = "";
