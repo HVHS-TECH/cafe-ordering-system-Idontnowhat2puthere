@@ -150,8 +150,10 @@ function addItem() {
 
     if (money < price) {
         showOutput();
-        OUTPUT.innerHTML = 
-        "<p>You need at least $" + price + " for the " +item + "</p>";
+        OUTPUT.innerHTML =
+        "<p>You entered $" + money +
+        ". This package costs $" + price +
+        ". Please enter enough money to continue.</p>";
         return;
     }
 
