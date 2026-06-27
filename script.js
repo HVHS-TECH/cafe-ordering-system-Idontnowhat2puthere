@@ -126,7 +126,7 @@ function addItem() {
         price = 15;
     }
 
-    if (item ==="Meduim Size Package") {
+    if (item ==="Medium Size Package") {
         price = 35;
     }
 
@@ -134,7 +134,7 @@ function addItem() {
         price = 50;
     }
 
-    if (item ==="Extra large Size Package") {
+    if (item ==="Extra Large Size Package") {
         price = 100;
     }
 
@@ -142,12 +142,12 @@ function addItem() {
         price = 75;
     }
 
-    if (item ==="Global treasures Package") {
+    if (item ==="Global Treasures Package") {
         price = 120;
     }
 
     if (money < price) {
-        shouwOutput();
+        showOutput();
         OUTPUT.innerHTML = 
         "<p>You need at least $" + price + "for the " +item + "</p>";
         return;
