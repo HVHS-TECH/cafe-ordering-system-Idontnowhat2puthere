@@ -121,6 +121,8 @@ function addItem() {
         Number(document.getElementById("moneyInput").value);
 
     let price = 0;
+
+    alert(item);
     
     if (item ==="Small Size Package") {
         price = 15;
