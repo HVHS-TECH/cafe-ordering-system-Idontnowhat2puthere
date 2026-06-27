@@ -118,7 +118,7 @@ function addItem() {
         document.getElementById("itemInput").value;
 
     let money =
-        document.getElementById("moneyInput").value;
+        Number(document.getElementById("moneyInput").value);
 
     shoppingList.push({
         name: name,
