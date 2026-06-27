@@ -151,10 +151,13 @@ function addItem() {
         return;
     }
 
+let change = money - price;
     shoppingList.push({
         name: name,
         item: item,
-        money: money
+        money: money,
+        price: price,
+        change: change
     });
 
     showOutput();
