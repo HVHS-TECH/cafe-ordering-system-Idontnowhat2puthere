@@ -107,6 +107,11 @@ function addItem() {
 
     const form = document.getElementById("orderForm");
 
+    if (!form.reportValidity()) {
+        OUTPUT.innerHTML = "<p>Please fill out all required fields</p>";
+        return;
+    }
+
     let name =
         document.getElementById("nameInput").value;
 
