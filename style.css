@@ -439,14 +439,10 @@ header .navbar {
 
 #Mysterymail {
    display: none;
+   width: 100%;
    margin-top: 30px;
    padding: 20px;
    background: white;
    border: 1px solid #ccc;
    border-radius: 8px;
-}
-
-#Mysterymail {
-   width: 100%;
-   margin-top: 20px;
 }
