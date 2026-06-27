@@ -120,6 +120,39 @@ function addItem() {
     let money =
         Number(document.getElementById("moneyInput").value);
 
+    let price = 0;
+    
+    if (item ==="Small Size Package") {
+        price = 15;
+    }
+
+    if (item ==="Meduim Size Package") {
+        price = 35;
+    }
+
+    if (item ==="Large Size Package") {
+        price = 50;
+    }
+
+    if (item ==="Extra large Size Package") {
+        price = 100;
+    }
+
+    if (item ==="Retro Package") {
+        price = 75;
+    }
+
+    if (item ==="Global treasures Package") {
+        price = 120;
+    }
+
+    if (money < price) {
+        shouwOutput();
+        OUTPUT.innerHTML = 
+        "<p>Not enough money entered</p>";
+        return;
+    }
+
     shoppingList.push({
         name: name,
         item: item,
