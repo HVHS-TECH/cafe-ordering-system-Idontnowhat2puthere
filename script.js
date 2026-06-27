@@ -149,7 +149,7 @@ function addItem() {
     if (money < price) {
         shouwOutput();
         OUTPUT.innerHTML = 
-        "<p>Not enough money entered</p>";
+        "<p>You need at least $" + price + "for the " +item + "</p>";
         return;
     }
 
