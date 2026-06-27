@@ -149,7 +149,7 @@ function addItem() {
     if (money < price) {
         showOutput();
         OUTPUT.innerHTML = 
-        "<p>You need at least $" + price + "for the " +item + "</p>";
+        "<p>You need at least $" + price + " for the " +item + "</p>";
         return;
     }
 
