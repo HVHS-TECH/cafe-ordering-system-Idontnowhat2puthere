@@ -116,6 +116,8 @@ function addItem() {
     let money =
         Number(document.getElementById("moneyInput").value);
 
+    if (name ==="")
+
     let price = 0;
     
     if (item ==="Small Size Package") {
@@ -168,7 +170,7 @@ let change = money - price;
         "<p>Item cost: $" + price + "</p>";
 
         if (change > 0) {
-            OUTPUT.innerHTML += "<p>Change: $" + change.tofixed(2) + "</p>";
+            OUTPUT.innerHTML += "<p>Change: $" + change.toFixed(2) + "</p>";
         } else {
             OUTPUT.innerHTML += "<p>No change due</p>";
         }
