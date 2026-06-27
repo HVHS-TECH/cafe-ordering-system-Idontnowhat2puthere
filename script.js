@@ -168,19 +168,6 @@ let change = money - price;
 
     showOutput();
 
-    function resetOrders() {
-
-        if (!confirm("Are you sure you want to delete all orders?")) {
-            return;
-        }
-
-        shoppingList = [];
-        OUTPUT.innerHTML = "<p>All orders have been reset</p>";
-        document.getElementById("nameInput").value = "";
-         document.getElementById("item").value = "";
-          document.getElementById("moneyInput").value = "";
-    }
-
    OUTPUT.innerHTML = "";
 
 OUTPUT.innerHTML =
@@ -227,3 +214,16 @@ function showList() {
             "</p>";
     }
 }
+
+function resetOrders() {
+
+        if (!confirm("Are you sure you want to delete all orders?")) {
+            return;
+        }
+
+        shoppingList = [];
+        OUTPUT.innerHTML = "<p>All orders have been reset</p>";
+        document.getElementById("nameInput").value = "";
+         document.getElementById("item").value = "";
+          document.getElementById("moneyInput").value = "";
+    }
