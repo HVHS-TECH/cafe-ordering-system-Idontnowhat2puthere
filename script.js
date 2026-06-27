@@ -116,11 +116,11 @@ function addItem() {
     let money =
         Number(document.getElementById("moneyInput").value);
 
-    if (name ==="" || item ==="" || isNaN(money)) {
-        shouwOutput();
-        OUTPUT.innerHTML = "<p>Please complete all fields before submitting your order</p>";
-        return;
-    }
+   if (name === "" || item === "" || money <= 0 || isNaN(money)) {
+    showOutput();
+    OUTPUT.innerHTML = "<p>Please complete all fields before submitting your order.</p>";
+    return;
+}
 
     let price = 0;
     
