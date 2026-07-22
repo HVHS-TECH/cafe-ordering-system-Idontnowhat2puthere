@@ -151,9 +151,7 @@ function addItem() {
     if (money < price) {
         showOutput();
         OUTPUT.innerHTML =
-        "<p>You entered $" + money +
-        ". This package costs $" + price +
-        ". Please enter enough money to continue.</p>";
+        "<p>Not enough money</p>";
         return;
     }
 
