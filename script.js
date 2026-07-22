@@ -116,11 +116,6 @@ function addItem() {
     let money =
         Number(document.getElementById("moneyInput").value);
 
-   if (name === "" || item === "" || money <= 0 || isNaN(money)) {
-    showOutput();
-    OUTPUT.innerHTML = "<p>Please complete all fields before submitting your order.</p>";
-    return;
-}
 
     let price = 0;
     
@@ -151,7 +146,7 @@ function addItem() {
     if (money < price) {
         showOutput();
         OUTPUT.innerHTML =
-        "<p>Not enough money</p>";
+        "<p>Not enough money </p>";
         return;
     }
 
