@@ -180,29 +180,3 @@ if (change > 0) {
     document.getElementById("moneyInput").value = "";
 }
 
-function showList() {
-
-    showOutput();
-
-    OUTPUT.innerHTML = "";
-
-    OUTPUT.innerHTML +=
-        "<h3>Customer Orders</h3>";
-
-    OUTPUT.innerHTML +=
-        "<p>Number of orders: " +
-        shoppingList.length +
-        "</p>";
-
-    for (let i = 0; i < shoppingList.length; i++) {
-
-        OUTPUT.innerHTML +=
-            "<p>" +
-            shoppingList[i].name +
-            " ordered " +
-            shoppingList[i].item +
-            " for $" +
-            shoppingList[i].money +
-            "</p>";
-    }
-}
